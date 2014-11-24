@@ -181,6 +181,11 @@ Besides those there will be more special calendars like currently existing NYSE 
 			<version>1.9.5</version>
 			<scope>test</scope>
 		</dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.14.8</version>
+        </dependency>
 	</dependencies>
 	<licenses>
 		<license>
