@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:Configuration hierarchy="ko" description="Korea"
+                   xmlns:tns="http://www.example.org/Holiday" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.example.org/Holiday /Holiday.xsd">
+	<tns:Holidays>
+		<tns:Fixed month="JANUARY" day="1" descriptionPropertiesKey="NEW_YEAR"/>
+		<tns:Fixed month="MARCH" day="1" descriptionPropertiesKey="MARCH_FIRST"/>
+		<tns:Fixed month="APRIL" day="5" descriptionPropertiesKey="GREEN_DAY"/>
+		<tns:Fixed month="MAY" day="5" descriptionPropertiesKey="CHILDREN_DAY">
+			<tns:MovingCondition substitute="SATURDAY" with="NEXT" weekday="MONDAY"/>
+			<tns:MovingCondition substitute="SUNDAY" with="NEXT" weekday="MONDAY"/>
+		</tns:Fixed>
+		<tns:Fixed month="MAY" day="8" descriptionPropertiesKey="PARENTS_DAY"/>
+		<tns:Fixed month="MAY" day="15" descriptionPropertiesKey="TEACHER_DAY"/>
+		<tns:Fixed month="JUNE" day="6" descriptionPropertiesKey="MEMORIAL_DAY"/>
+		<tns:Fixed month="JULY" day="17" descriptionPropertiesKey="CONSTITUTION_DAY"/>
+		<tns:Fixed month="AUGUST" day="15" descriptionPropertiesKey="INDEPENDENCE_DAY"/>
+		<tns:Fixed month="OCTOBER" day="1" descriptionPropertiesKey="ARMED_FORCES_DAY"/>
+		<tns:Fixed month="OCTOBER" day="3" descriptionPropertiesKey="FOUNDATION_DAY"/>
+		<tns:Fixed month="OCTOBER" day="9" descriptionPropertiesKey="HANGUL_DAY"/>
+		<tns:Fixed month="DECEMBER" day="25" descriptionPropertiesKey="CHRISTMAS"/>
+        <!--
+		<tns:Fixed month="JANUARY" day="1" descriptionPropertiesKey="NEW_YEAR_LUNAR"/>
+		<tns:Fixed month="JANUARY" day="2" descriptionPropertiesKey="NEW_YEAR_LUNAR"/>
+		<tns:Fixed month="AUGUST" day="14" descriptionPropertiesKey="CHOOSUK"/>
+		<tns:Fixed month="AUGUST" day="15" descriptionPropertiesKey="CHOOSUK"/>
+		<tns:Fixed month="AUGUST" day="16" descriptionPropertiesKey="CHOOSUK"/>
+        <tns:Fixed month="APRIL" day="8" descriptionPropertiesKey="BUDDHA_DAY"/>
+        <tns:Fixed month="DECEMBER" day="30" descriptionPropertiesKey="NEW_YEAR_LUNAR" lunar="true"/>
+		-->
+	</tns:Holidays>
+</tns:Configuration>
